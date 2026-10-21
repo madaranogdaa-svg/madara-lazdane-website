@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-page="contact">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Madara Lazdāne</title>
+  <meta name="description" content="Get in touch about coaching, advisory, workshops or the 36-Day Journey workbook.">
+  <link rel="canonical" href="https://www.example.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Madara Lazdāne">
+  <meta property="og:title" content="Contact — Madara Lazdāne">
+  <meta property="og:description" content="Tell me what you're building.">
+  <meta property="og:url" content="https://www.example.com/contact.html">
+  <meta property="og:image" content="https://www.example.com/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#8c2f39">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header" data-component="header"></header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container grid grid--split">
+        <div>
+          <h1 style="font-size:var(--fs-2xl)" data-i18n="contact.title">Tell me what <em>you want.</em></h1>
+          <p class="lead" data-i18n="contact.lead">A few sentences is enough. I read every message personally and reply within one working day.</p>
+          <p class="muted" data-i18n="contact.direct">Prefer email?</p>
+          <p><a href="mailto:hello@example.com" data-email>hello@example.com</a></p>
+        </div>
+        <form class="form" data-form="contact" novalidate>
+          <input type="hidden" name="form" value="contact">
+          <div class="grid grid--2" style="gap:var(--s-5)">
+            <div class="field"><label for="c-name" data-i18n="f.name">Name</label><input id="c-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="c-email" data-i18n="f.email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field"><label for="c-topic" data-i18n="contact.topic">Choose a topic</label>
+            <select id="c-topic" name="topic">
+              <option value="coaching" data-i18n="contact.o1">1:1 coaching</option>
+              <option value="advisory" data-i18n="contact.o2">Advisory for an existing project</option>
+              <option value="workshop" data-i18n="contact.o3">Workshop, talk or team session</option>
+              <option value="product" data-i18n="contact.o4">A question about a product</option>
+              <option value="other" data-i18n="contact.o5">Something else</option>
+            </select></div>
+          <div class="field"><label for="c-msg" data-i18n="contact.msg">Tell me about your situation</label><textarea id="c-msg" name="message" required></textarea></div>
+          <div class="field field--check"><input id="c-consent" name="consent" type="checkbox" required><label for="c-consent" data-i18n="f.consent">I agree that my details are used to reply to this message. See the <a href="privatuma.html">privacy policy</a>.</label></div>
+          <div><button class="btn btn--primary" type="submit" data-i18n="contact.send">Send message</button></div>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--paper2" id="privacy">
+      <div class="container container--narrow">
+        <p class="eyebrow" data-i18n="privacy.eyebrow">Privacy policy</p>
+        <h2 style="font-size:var(--fs-xl)" data-i18n="privacy.title">How your details are used</h2>
+        <p class="muted" data-i18n="privacy.text">I only use your message to reply to you. How personal data is processed, who it is shared with and what your rights are is set out in the <a href="privatuma.html">privacy policy</a> (in Latvian).</p>
+      </div>
+    </section>
+
+    <section class="section" id="terms">
+      <div class="container container--narrow">
+        <p class="eyebrow" data-i18n="terms.eyebrow">Terms</p>
+        <h2 style="font-size:var(--fs-xl)" data-i18n="terms.title">Terms of purchase</h2>
+        <p class="muted" data-i18n="terms.text">Ordering, payment, delivery, right of withdrawal and session terms are set out in the <a href="noteikumi.html">distance contract</a> (in Latvian).</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/lv.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

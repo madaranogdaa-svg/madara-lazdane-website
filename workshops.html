@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" data-page="workshops">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Workshops &amp; Masterclasses | Madara Lazdāne</title>
+  <meta name="description" content="Workshops, masterclasses, talks and team sessions on personal brand, LinkedIn, building something alongside your 9–5, and time, energy and money.">
+  <link rel="canonical" href="https://www.example.com/workshops.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Madara Lazdāne">
+  <meta property="og:title" content="Workshops & Masterclasses — Madara Lazdāne">
+  <meta property="og:description" content="Bring the conversation to your team, community or event.">
+  <meta property="og:url" content="https://www.example.com/workshops.html">
+  <meta property="og:image" content="https://www.example.com/assets/img/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#8c2f39">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header" data-component="header"></header>
+
+  <main id="main">
+    <section class="split">
+      <div class="split__media"><figure class="media"><img src="assets/img/madara-rudens-veste.jpg" alt="Madara Lazdāne" width="1066" height="1600" style="object-position:56% 44%" fetchpriority="high"></figure></div>
+      <div class="split__body">
+        <h1 data-i18n="ws.title">Bring the conversation <em>to your team.</em></h1>
+        <p class="lead" data-i18n="ws.lead">Practical sessions for your team, community or event — for people who are good at their jobs and curious about what else they could build.</p>
+        <ul class="caps-list">
+          <li data-i18n="ws.h1">Masterclasses · talks · team sessions</li>
+          <li data-i18n="ws.h2">In person in Latvia or online</li>
+          <li data-i18n="ws.h3">Shaped around your audience</li>
+        </ul>
+        <div><a class="btn btn--primary" href="#enquire" data-i18n="ws.cta">Enquire about a workshop</a></div>
+      </div>
+    </section>
+
+    <section class="section section--paper2">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="ws.themes.title">Topics I bring <em>to the room.</em></h2>
+        </div>
+        <ol class="themes" data-render="themes"></ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid--split">
+        <div>
+          <p class="eyebrow" data-i18n="ws.formats.eyebrow">Formats</p>
+          <h2 data-i18n="ws.formats.title">From a keynote <em>to a working session.</em></h2>
+        </div>
+        <div>
+          <ul class="chips">
+            <li data-i18n="ws.chip2">Masterclasses</li>
+            <li data-i18n="ws.chip3">Talks</li>
+            <li data-i18n="ws.chip4">Team sessions</li>
+          </ul>
+          <p class="muted" data-i18n="ws.formats.text">Every session is shaped around your audience — a leadership team, employees in a specific industry, a women's community or a conference.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tight section--dark">
+      <div class="container container--narrow">
+        <div class="section-head">
+          <h2 data-i18n="ws.events.title">Upcoming events <em>&amp; masterclasses.</em></h2>
+        </div>
+        <div class="events" data-render="events"></div>
+      </div>
+    </section>
+
+    <div data-render="about"></div>
+
+    <section class="section section--paper2" id="enquire">
+      <div class="container grid grid--split">
+        <div>
+          <p class="eyebrow" data-i18n="ws.form.eyebrow">Enquire</p>
+          <h2 data-i18n="ws.form.title">Tell me about <em>your group.</em></h2>
+          <p class="muted" data-i18n="ws.form.text">Or register interest in public workshops — I'll let you know when the next one opens.</p>
+        </div>
+        <form class="form" data-form="workshop" novalidate>
+          <input type="hidden" name="form" value="workshop">
+          <div class="field"><label for="w-type" data-i18n="ws.f.type">I'm interested in</label>
+            <select id="w-type" name="type">
+              <option value="team" data-i18n="ws.f.o1">A session for my team or company</option>
+              <option value="event" data-i18n="ws.f.o2">A talk or masterclass at an event</option>
+              <option value="linkedin" data-i18n="ws.f.o3">Practical LinkedIn masterclass</option>
+              <option value="time" data-i18n="ws.f.o4">Time-planning masterclass</option>
+            </select></div>
+          <div class="grid grid--2" style="gap:var(--s-5)">
+            <div class="field"><label for="w-name" data-i18n="f.name">Name</label><input id="w-name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="w-email" data-i18n="f.email">Email</label><input id="w-email" name="email" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field"><label for="w-org" data-i18n="ws.f.org">Organisation (optional)</label><input id="w-org" name="organisation" autocomplete="organization"></div>
+          <div class="field"><label for="w-msg" data-i18n="ws.f.msg">Group size, date, what you'd like people to leave with</label><textarea id="w-msg" name="message"></textarea></div>
+          <div class="field field--check"><input id="w-consent" name="consent" type="checkbox" required><label for="w-consent" data-i18n="f.consent">I agree that my details are used to reply to this message. See the <a href="privatuma.html">privacy policy</a>.</label></div>
+          <div><button class="btn btn--primary" type="submit" data-i18n="ws.f.send">Send enquiry</button></div>
+          <p class="form__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/lv.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
